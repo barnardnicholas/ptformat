@@ -229,7 +229,7 @@ private:
 
 	std::string _path;
 
-	unsigned char* _ptfunxored;
+	unsigned char* _ptfunxored; // 0010111100101011 ??
 	uint64_t       _len;
 	int64_t        _sessionrate;
 	uint8_t        _version;

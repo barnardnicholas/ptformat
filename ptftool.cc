@@ -57,6 +57,9 @@ int main (int argc, char **argv) {
 		exit(-1);
 		break;
 	case 0:
+		printf("\nRaw decrypted PTX:\n");
+		printf("`%s` - %llu bytes\n", ptf.unxored_data(), ptf.unxored_size());
+
 		printf("ProTools %d Session: Samplerate = %" PRId64 "Hz\nTarget samplerate = 48000\n\n", ptf.version(), ptf.sessionrate());
 		printf("%zu wavs, %zu regions, %zu active regions\n\n",
 			ptf.audiofiles().size(),
